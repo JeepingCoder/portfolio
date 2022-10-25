@@ -1,0 +1,170 @@
+
+/*set up and styling for body*/
+body{
+    display:block;
+    background-color: rgb(69, 27, 27);
+    color: orange;
+      
+} 
+
+/*spacing and styling for header*/
+header{
+    display:flex;
+    flex-direction: row;
+    min-width: 768px;
+    background-color: black;
+    justify-content: space-between;
+    align-content: center;
+    border: 20px solid gray;
+    font-family: 'Oswald', sans-serif;
+    
+}
+/* spacing and font set up for links in header*/
+.links{
+    display:flex;
+    list-style: none;
+    justify-content:space-around;
+    padding-right: 20px;
+    padding-top: 70px;
+    text-decoration: none;
+    font-style: italic;
+    font-size:20pt;
+}
+
+/*this command keeps LINKS in place and spaced*/
+a{
+     padding:0px 5px
+}
+
+
+/*placement and font for about me section*/
+#me-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 18pt;
+    line-height: 130%; 
+    background-color: rgb(69, 27, 27) ;
+
+}
+
+/*placement of face image*/
+img{
+    width:300px;
+    display:flex;
+    flex-direction: column;
+}
+
+/*page set up for article*/ 
+article{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* keeps quote center in screen ( no idea how this is linked but if
+removed it loses placement*/
+.about-par{
+    margin-top: 150px;
+}
+
+/* quoted text in body */
+.about-text{
+    display:flex;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    align-content: center;
+    line-height: 125%;
+}
+
+/*Styling for Headings*/
+h3,h4,h5{
+display:flex;
+background-color: rgb(69, 27, 27);
+border-bottom: 20px gray solid ;
+font-size: 36pt;
+}
+
+/*lay out for applications*/
+#applications{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+    border:none;
+}
+
+/*styling for text in applications*/
+.info{
+    font-size: 16pt;
+    text-align: justify;
+    margin-right:150px;
+}
+
+/* link responsive code*/
+a:hover {
+    color:teal;
+    text-decoration: none;
+    /* background-color: gray; */
+    padding: 14px 25px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration:none;
+    /* display:inline-block; */
+}
+/*link spacing for contact info*/
+#contact li {
+    float:left;
+    width:33.3%;
+    list-style-type: none;
+    
+}
+/*decoration for links*/
+.button{
+    /* background-color: darkgrey; */
+    text-decoration: none;
+    position:flex;
+    flex-direction: column;
+    border:none;
+    font-size: 26pt;
+    font-weight: bold;
+    font-style: italic;
+    
+
+} 
+/* footer bottom of page*/
+footer{
+    background-color: black;
+    border:solid 20px darkgrey;
+    font-size: 48pt;
+    text-align: center;
+    margin-top:120px;
+    
+}
+/*parameters for responsive page*/
+
+@media screen and (max-width: 992px) {
+    header {
+      background: #772014;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  }
+
